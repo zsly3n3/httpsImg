@@ -102,7 +102,8 @@ func deleteQRCode(key string)bool{
 }
 
 func main() {
+	gin.SetMode(gin.DebugMode)
 	r := setupRouter()
 	//r.RunTLS("192.168.6.103:8080","214801461110100.pem","214801461110100.key")
-	r.Run("192.168.6.103:8080")
+	r.Run("127.0.0.1:8080")
 }
