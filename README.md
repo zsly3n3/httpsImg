@@ -1,2 +1,2 @@
 # httpsImg
-在$GOPATH下的github.com目录中新建一个文件夹,放入其中
+1.git clone到src/github.com中zsly3n3文件夹下<br/><br/>2.下载如下库:<br/><br/>$ go get github.com/kardianos/govendor<br/><br/>cd 到此工程目录<br/><br/>$ govendor init<br/><br/>$ govendor fetch github.com/gin-gonic/gin@v1.2
