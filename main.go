@@ -16,7 +16,6 @@ import (
 
 func setupRouter() *gin.Engine {
 	r := gin.Default()
-	r.Static("/assets", "./assets")
 	r.GET("/generateQRCode/:key/:token", func(c *gin.Context) {
 		qr_id := c.Params.ByName("key")
 		token := c.Params.ByName("token")
