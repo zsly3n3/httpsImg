@@ -87,7 +87,7 @@ func getQRCode(key string,token string)(string,bool){
 		fmt.Println(err)
 		return "",tf
 	}
-	return qrurl,true
+	return "qrcode/"+key+".jpg",true
 }
 
 func deleteQRCode(key string)bool{
